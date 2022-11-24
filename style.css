@@ -1,0 +1,149 @@
+.pinterest-card{
+    width: 500px;
+    height:700px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10vh;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgb(0 0 0, 20%);
+    transition: box-shadow 500ms;
+}
+
+.pinterest-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pinterest-card_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0 ;
+    top: 0;
+    background-image: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 60%);
+    opacity: 0%;
+}
+
+.pinterest-card_info{
+    position: absolute;
+    right: 0;
+    top:85%;
+    bottom: 0;
+    left: 0;
+    color: black;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pinterest-card_info_cover{
+    background-color: rgb(228, 218, 218);
+    width: 250px;
+    height: 90px;
+    top: 85px;
+    left: 24px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translateY(100px);
+    transition: transform 400ms;
+    z-index: 1;
+}
+
+.pinterest-card_info_road{
+    position: absolute;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+    transform: translateY(100px);
+    transition: transform 400ms;
+    cursor: pointer;
+    width: 180px;
+    font-weight: bold;
+}
+
+.pinterest-card_info_cover2{
+    background-color: rgb(228, 218, 218);
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+    left: 57%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(100px);
+    transition: transform 400ms;
+    z-index: 1;
+}
+
+ion-icon {
+    font-size: 50px;
+    padding-top: 15px;
+    }
+
+.pinterest-card_info_cover3{
+        background-color: rgb(228, 218, 218);
+        width: 90px;
+        height: 90px;
+        margin-top: 5px;
+        left: 78%;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(100px);
+        transition: transform 400ms;
+        z-index: 1;
+    }
+
+.pinterest-card_play{
+    background-color: red;
+    width: 130px;
+    height: 80px;
+    top: 100px;
+    right: 35px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translateY(-210px);
+    transition: transform 400ms;
+}
+
+.pinterest-card .save{
+    position: absolute; 
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 35px;
+    padding-top: 20px;
+     width: 0;
+     height: 0;
+     margin: auto;
+     color: white;
+     cursor: pointer;
+ }
+
+.pinterest-card:hover .pinterest-card_play{
+    transform: translateY(-70px);
+}
+
+.pinterest-card:hover .pinterest-card_info_cover{
+    transform: translateY(-90px);
+}
+
+.pinterest-card:hover .pinterest-card_info_road{
+    transform: translateY(10px);
+}
+
+.pinterest-card:hover .pinterest-card_info_cover2 {
+    transform: translateY(-10px);
+}
+
+.pinterest-card:hover .pinterest-card_info_cover3 {
+    transform: translateY(-10px);
+}
+
+.pinterest-card:hover .pinterest-card_overlay{
+    opacity: 100%;
+}
